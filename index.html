@@ -195,7 +195,74 @@
 
   </div>
 </section>
-    <section id="projects"><!-- Task 6 --></section>
+    <section id="projects">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">GenAI <em>Projects</em></h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-video-wrap">
+          <iframe
+            src="https://drive.google.com/file/d/1ldP9q42vLpwrqhEgfrTW4VuU17ly7ace/preview"
+            allow="autoplay"
+            frameborder="0"
+            allowfullscreen
+            title="AI Browser Agent demo video"
+          ></iframe>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">AI Agent · 2024</div>
+          <h3 class="project-name">AI Browser Agent</h3>
+          <p class="project-tagline">An AI agent that controls your browser automatically — streaming multi-step task execution with persistent context.</p>
+          <ul class="project-bullets">
+            <li>FastAPI service streaming multi-step task execution with persistent session context</li>
+            <li>Optimized token usage by dropping non-interactive elements and trimming old browser snapshots from memory</li>
+            <li>Production-grade observability: OpenTelemetry tracing, InfluxDB metrics, Grafana dashboards including token cost and latency</li>
+            <li>LangGraph-backed checkpointing on Postgres for resumable conversations and structured chat-history retrieval</li>
+          </ul>
+          <div class="project-chips">
+            <span class="chip">FastAPI</span>
+            <span class="chip">LangGraph</span>
+            <span class="chip">OpenTelemetry</span>
+            <span class="chip">Python</span>
+            <span class="chip">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-video-wrap project-video-placeholder">
+          <div class="video-coming-soon">
+            <div class="play-ring"><div class="play-arrow"></div></div>
+            <span>Video coming soon</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Knowledge Pipeline · 2024</div>
+          <h3 class="project-name">Distill</h3>
+          <p class="project-tagline">Distilling AI trends from X, GitHub, YouTube, and RSS into your knowledge base — while you scroll.</p>
+          <ul class="project-bullets">
+            <li>Free audio pipeline converting YouTube videos into short, digestible podcast-style audio using a locally deployed TTS model</li>
+            <li>End-to-end AI knowledge pipeline ingesting from X, YouTube, GitHub, RSS, and websites with one-click sharing to X, RedNote, or Obsidian</li>
+            <li>Condenses transcripts into podcast-style scripts with an LLM and synthesizes speech entirely on-device</li>
+          </ul>
+          <div class="project-chips">
+            <span class="chip">LangChain</span>
+            <span class="chip">TTS</span>
+            <span class="chip">Python</span>
+            <span class="chip">RSS</span>
+            <span class="chip">Obsidian</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
     <section id="education"><!-- Task 7 --></section>
   </main>
 
