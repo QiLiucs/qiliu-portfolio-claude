@@ -339,3 +339,41 @@ a {
   background: var(--sage-mid);
   flex-shrink: 0;
 }
+
+/* ── STACK ── */
+#stack {
+  background: var(--parchment);
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+
+.stack-cell {
+  background: var(--parchment);
+  padding: 28px 24px;
+  transition: background 0.25s;
+}
+
+.stack-cell:hover {
+  background: var(--sage-lt);
+}
+
+.stack-cell-label {
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--sage-mid);
+  margin-bottom: 14px;
+}
+
+.stack-items {
+  font-family: var(--font-display);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink);
+}
