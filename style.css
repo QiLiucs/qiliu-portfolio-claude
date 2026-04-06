@@ -8,6 +8,7 @@
   --parchment: #f4f2ee;
   --rule:      #e4e4e0;
   --muted:     #7a7a72;
+  --ink-soft:  #4a4a42;
   --gold:      #c8a878;
 
   --font-display: 'EB Garamond', Georgia, serif;
@@ -182,8 +183,6 @@ a {
   justify-content: space-between;
   border-right: 1px solid var(--rule);
 }
-
-.hero-left-top { }
 
 .hero-eyebrow {
   display: flex;
@@ -437,7 +436,7 @@ a {
   font-family: var(--font-body);
   font-size: 13px;
   line-height: 1.7;
-  color: #4a4a42;
+  color: var(--ink-soft);
   padding-left: 16px;
   position: relative;
 }
@@ -608,7 +607,7 @@ a {
   font-family: var(--font-body);
   font-size: 12px;
   line-height: 1.6;
-  color: #5a5a52;
+  color: var(--ink-soft);
   padding-left: 14px;
   position: relative;
 }
