@@ -41,6 +41,7 @@ revealEls.forEach((el) => revealObserver.observe(el));
 function animateCounter(el) {
   const target = parseInt(el.dataset.target, 10);
   const prefix = el.dataset.prefix || '';
+  // All stat elements with needed suffixes have explicit data-suffix attributes in HTML
   const suffix = el.dataset.suffix || '';
   const duration = 1200;
   const start = performance.now();
