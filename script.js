@@ -75,3 +75,23 @@ const statsObserver = new IntersectionObserver(
 
 const statsSection = document.querySelector('.hero-stats');
 if (statsSection) statsObserver.observe(statsSection);
+
+/* ── LIGHTBOX ── */
+const lightbox    = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+function openLightbox(img) {
+  lightboxImg.src = img.src;
+  lightboxImg.alt = img.alt;
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});

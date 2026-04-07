@@ -159,13 +159,13 @@
         </ul>
         <div class="exp-photos">
           <div class="photo-slot">
-            <img src="assets/images/photo-1.jpg" alt="Amazon achievement" class="exp-photo" onerror="this.parentElement.classList.add('photo-placeholder')">
+            <img src="assets/images/photo-1.jpg" alt="Amazon Prime signup — ES marketplace" class="exp-photo" onclick="openLightbox(this)" onerror="this.parentElement.classList.add('photo-placeholder')">
           </div>
           <div class="photo-slot">
-            <img src="assets/images/photo-2.jpg" alt="Amazon achievement" class="exp-photo" onerror="this.parentElement.classList.add('photo-placeholder')">
+            <img src="assets/images/photo-2.jpg" alt="Amazon Prime signup — US marketplace" class="exp-photo" onclick="openLightbox(this)" onerror="this.parentElement.classList.add('photo-placeholder')">
           </div>
           <div class="photo-slot">
-            <img src="assets/images/photo-3.jpg" alt="Amazon achievement" class="exp-photo" onerror="this.parentElement.classList.add('photo-placeholder')">
+            <img src="assets/images/photo-3.jpg" alt="Amazon Prime signup — CA marketplace" class="exp-photo" onclick="openLightbox(this)" onerror="this.parentElement.classList.add('photo-placeholder')">
           </div>
         </div>
       </div>
@@ -290,6 +290,11 @@
   </div>
 </section>
   </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="">
+  </div>
 
   <footer id="footer">
   <div class="footer-name">Qi Liu</div>
